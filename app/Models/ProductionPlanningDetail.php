@@ -12,6 +12,6 @@ class ProductionPlanningDetail extends Model
     protected $fillable = [
         'production_planning_id',
         'production_date',
-        'production_qty',
+        'qty',
     ];
 }

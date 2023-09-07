@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('production_capacities', function (Blueprint $table) {
             $table->id();
             $table->foreignId('product_id');
-            $table->integer('capacity', 100);
+            $table->integer('capacity')->unsigned();
             $table->timestamps();
         });
     }

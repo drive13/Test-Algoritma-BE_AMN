@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('production_planning_id');
             $table->date('production_date');
-            $table->integer('qty', 100);
+            $table->integer('qty')->unsigned();
             $table->timestamps();
         });
     }

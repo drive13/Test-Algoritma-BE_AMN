@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('purchase_request_id');
             $table->foreignId('part_id');
-            $table->integer('qty', 100);
+            $table->integer('qty');
             $table->integer('price');
             $table->integer('total');
             $table->timestamps();

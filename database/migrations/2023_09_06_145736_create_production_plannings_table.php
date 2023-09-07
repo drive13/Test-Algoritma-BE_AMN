@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('production_plannings', function (Blueprint $table) {
             $table->id();
             $table->foreignId('product_id');
-            $table->integer('planned_qty', 100);
-            $table->integer('daily_capacity', 100);
+            $table->integer('planned_qty')->unsigned();
+            $table->integer('daily_capacity')->unsigned();
             $table->date('plan_date');
             $table->timestamps();
         });

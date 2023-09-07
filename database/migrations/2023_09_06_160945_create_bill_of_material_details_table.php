@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('bill_of_material_id');
             $table->foreignId('part_id');
-            $table->integer('qty', 100);
+            $table->integer('qty');
             $table->integer('cost');
             $table->timestamps();
         });
